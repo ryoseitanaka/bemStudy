@@ -1,16 +1,49 @@
-@import './var';
+@import "ress";
+@import "./var";
 
-h1 {
-  background-color: cadetblue;
+html {
+  font-size: 62.5%;
 }
 
-p {
-  color: $p_color;
-  background-color: $p_bg_color;
-  font-size: 60px;
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 48px;
+
+  &__logo {
+    height: 100px;
+    width: 120px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    font-size: 1.8rem;
+    list-style: none;
+    margin: 0 33px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
 }
 
-body {
-  background-image: url('../images/user00000.jpg');
-  color: white;
+.top {
+  &__img {
+    position: relative;
+  }
+  &__tlt,
+  &__txt {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.main img {
+  height: 100%;
+  width: 50%;
 }
