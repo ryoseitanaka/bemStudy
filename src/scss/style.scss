@@ -12,6 +12,8 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 0 48px;
+  position: fixed;
+  z-index: 1;
 
   &__logo {
     height: 100px;
@@ -32,18 +34,38 @@ html {
   }
 }
 
-.top {
-  &__img {
-    position: relative;
-  }
-  &__tlt,
-  &__txt {
-    position: absolute;
-    top: 0;
-  }
-}
+.main {
+  .top {
+    &__img {
+      height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0.154),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/firstview.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.main img {
-  height: 100%;
-  width: 50%;
+    &__tlt {
+      text-align: center;
+      color: #fff;
+      font-size: 6rem;
+      width: 100%;
+      position: absolute;
+      margin: 50px;
+    }
+    &__txt {
+      font-size: 1.8rem;
+      position: absolute;
+      top: 400px;
+      color: #fff;
+      height: 80px;
+      width: 400px;
+    }
+  }
 }
