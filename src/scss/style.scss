@@ -4,6 +4,9 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
 
 .header {
   height: 100px;
@@ -14,6 +17,7 @@ html {
   padding: 0 48px;
   position: fixed;
   z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 
   &__logo {
     height: 100px;
@@ -69,13 +73,16 @@ html {
     }
   }
   .content {
-    padding: 50px;
+    // width: 100vw;
+    // padding: 50px;
     &__tlt {
       margin: 50px;
       text-align: center;
       font-size: 4.8rem;
     }
     &__wrap {
+      width: 1000px;
+      margin: 0 auto;
       display: flex;
       display: flex-wrap;
       img {
